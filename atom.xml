@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xbears.github.io/"/>
-  <updated>2018-11-29T15:50:32.565Z</updated>
+  <updated>2018-11-29T15:54:22.422Z</updated>
   <id>https://xbears.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://xbears.github.io/posts/2018-11-29/%E7%B1%BB%E4%BC%BC%E6%89%8B%E7%BB%98%E7%9A%84%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
     <id>https://xbears.github.io/posts/2018-11-29/类似手绘的视频制作软件/</id>
     <published>2018-11-28T16:00:00.000Z</published>
-    <updated>2018-11-29T15:50:32.565Z</updated>
+    <updated>2018-11-29T15:54:22.422Z</updated>
     
-    <content type="html"><![CDATA[<p>在 youtube 上关注了一些频道，发现一些简单有趣的类似手绘视频，像这样的 <a href="https://www.youtube.com/watch?v=RupRLCer9zY" target="_blank" rel="noopener">5分钟看懂IPO</a>，这样的视频比较简单易懂而且还能使观看者时刻聚焦在内容上，想了想是否这种不是真正的手绘，好像有固定模式，猜想应该是软件生成的，于是去搜索了下发现是使用这个叫做 <a href="https://www.videoscribe.co" target="_blank" rel="noopener">VideoScribe</a> 软件制作的，不错的软件支持多平台还有很多素材库，不过售价也不便宜 $114/年，想想其实这个应该可以通过H5来实现（使用 spritejs 绘制 canvas ），需要一些素材，是不是可以做一做呢？ 先记录一下吧 💡。</p>]]></content>
+    <content type="html"><![CDATA[<p>在 youtube 上关注了一些频道，发现一些简单有趣的类似手绘视频，像这样的 <a href="https://www.youtube.com/watch?v=RupRLCer9zY" target="_blank" rel="noopener">5分钟看懂IPO</a>，这样的视频比较简单易懂而且还能使观看者时刻聚焦在内容上，似乎这种视频不是真正的手绘，好像有固定模式，猜想应该是软件生成的，于是去搜索了下，发现是使用这个叫做 <a href="https://www.videoscribe.co" target="_blank" rel="noopener">VideoScribe</a> 软件制作的，了解了下是一个非常不错的软件，支持多平台，还有很多素材，不过售价也不便宜 $114/年，想想其实这个应该可以通过H5来实现（使用 spritejs 绘制 canvas ），需要一些素材，是不是可以做一做呢？ 先记录一下吧 💡。</p>]]></content>
     
     <summary type="html">
     
