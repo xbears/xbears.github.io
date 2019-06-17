@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Xbear&#39;s Blog</title>
+  <title>若寒日誌</title>
   
-  <subtitle>记录点滴</subtitle>
+  <subtitle>記錄日常，分享思考</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xbears.github.io/"/>
-  <updated>2018-11-29T15:54:22.422Z</updated>
+  <updated>2019-06-17T16:27:08.539Z</updated>
   <id>https://xbears.github.io/</id>
   
   <author>
@@ -17,24 +17,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>类似手绘的视频制作软件</title>
-    <link href="https://xbears.github.io/posts/2018-11-29/%E7%B1%BB%E4%BC%BC%E6%89%8B%E7%BB%98%E7%9A%84%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
-    <id>https://xbears.github.io/posts/2018-11-29/类似手绘的视频制作软件/</id>
-    <published>2018-11-28T16:00:00.000Z</published>
-    <updated>2018-11-29T15:54:22.422Z</updated>
+    <title>分享最近的一些思考</title>
+    <link href="https://xbears.github.io/posts/2019-05-23/%E5%88%86%E4%BA%AB%E6%9C%80%E8%BF%91%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/"/>
+    <id>https://xbears.github.io/posts/2019-05-23/分享最近的一些思考/</id>
+    <published>2019-05-23T07:30:00.000Z</published>
+    <updated>2019-06-17T16:27:08.539Z</updated>
     
-    <content type="html"><![CDATA[<p>在 youtube 上关注了一些频道，发现一些简单有趣的类似手绘视频，像这样的 <a href="https://www.youtube.com/watch?v=RupRLCer9zY" target="_blank" rel="noopener">5分钟看懂IPO</a>，这样的视频比较简单易懂而且还能使观看者时刻聚焦在内容上，似乎这种视频不是真正的手绘，好像有固定模式，猜想应该是软件生成的，于是去搜索了下，发现是使用这个叫做 <a href="https://www.videoscribe.co" target="_blank" rel="noopener">VideoScribe</a> 软件制作的，了解了下是一个非常不错的软件，支持多平台，还有很多素材，不过售价也不便宜 $114/年，想想其实这个应该可以通过H5来实现（使用 spritejs 绘制 canvas ），需要一些素材，是不是可以做一做呢？ 先记录一下吧 💡。</p>]]></content>
+    <content type="html"><![CDATA[<p>我先说几个关键字：自律，健康，理财 。</p><h4 id="自律"><a href="#自律" class="headerlink" title="自律"></a>自律</h4><p>很多人听到自律这个词，都会有点排斥，内心就会觉得自己可能做不到，这样你从一开始就否定了，我觉得首先你得认同自律是可以让自己变得更好的，给一些信心自己，后面才会有一些正向的反馈。</p><p><strong>自律最大的敌人是懒惰，而懒惰大部分时候是因为没有思考和没有好的习惯。</strong></p><p>思考力这个东西不是一时半会可以提升的，这和一个人的人生阅历和生活经验有关，但可以在平时的锻炼中慢慢提高，我有几个方法和大家分享：</p><ol><li>学会独自处理问题。让自己正面的面对和处理问题，在处理这些事情的好坏经验中，你会成长，思考会发生；</li><li>向自己提问。面对一些结果和状态，多向自己提问，可以引发反思和总结；</li><li>持续的输入。思考力虽然来源于长期经验，但经验可以通过不断的输入知识来学习的；</li><li>尝试输出。输出是什么，就是把自己所想尽量表达出来，开始写总结、博客日记、或者和别人分享交流沟通，每一个都会倒逼自己不断的思考。</li></ol><p>习惯是什么，我理解的习惯其实就是在固定的时间或者环境做固定的事，所以这里有两层意思，一层如果你要培养的好的习惯，就可以尝试开始固定的时间、环境去重复的做这件事，让自己形成一种惯性的思维，从而养成好习惯（比如在固定的时间看书、在固定时间给亲人打电话），另一层意思是如果想改掉一些坏的习惯，就应该减少或者打乱这些事情在固定时间或环境发生。</p><p>不要觉得这些没有用，你可以尝试看看 比如做一个7天30天坚持计划，一点一点改变、积累，时间会给你想要的答案。</p><h4 id="健康"><a href="#健康" class="headerlink" title="健康"></a>健康</h4><p><strong>健康往往只有在不健康时候才知道它的重要性，我们其实都是在受上天的眷顾而活着，应该珍惜爱惜自己的身体。</strong></p><p>年初我经历了一次手术，脖子上的刀疤现在还很明显。大概是两年前体检时候发现有一个甲状腺的结节，这两年一直遵照医生嘱咐定期复查观察（早期无需手术，只要观察情况），今年初的这次复查本地医院发现情况不大好，发展的比较快，疑似恶性的可能性很高，然后我又在深圳再次做了复查，结果情况差不多，于是当即决定了做手术，很万幸，手术一些顺利，病理报告最后检测为良性，只用了几天的时间就出院康复了，可能以后回想这段经历，可能也就是我人生的一个非常小的插曲。</p><p>经历这件事我有几点可以和大家分享一下：</p><ol><li>做事要果断，不要拖延。去医院复查这两年看到有好几个年轻人都是拖了很久才去重视，最后已经很晚了。</li><li>好的心态很重要。住院前我老婆休了年假来陪我，我们这几天把港大医院附近可以游玩的可以吃的都走了一遍，还去了地铁直出的海边，心态非常的放松，朋友打电话问候，我们都戏称我们其实是在旅游。</li><li>必要的保障是必须的。人生面对很多事情是有退路的可以重来的，但生命很可能是没有退路的，所以不管是金钱储备还是保险，要给家人和自己留有最后的保障。我住院手术的所有花费都有社保和保险买单了，这里顺便插一句要买保险可以找我，我老婆在平安兼职 :)</li><li>坚持运动。不要借口自己没有时间去健身房就放弃运动，有计划的坚持小运动也是不错的，运动可以使你的身心得到放松、健康。</li></ol><h4 id="理财"><a href="#理财" class="headerlink" title="理财"></a>理财</h4><p>“人到中年说理财一般是因为穷” 哈哈，没错说的就是我，其实我想说的是现在穷不可怕，可怕的是你不想改变，或者压根就觉得你不可能改变。就像最近很火的电影“何以为家”里面的那对父母一样，意识不到贫穷是一种病。</p><p>去年看了一些理财投资类的书籍，颠覆了我很多以往的认知。大部分的书都是从财商启蒙开始的，前面的章节核心的都是说我们为什么要理财，理财开始时我们要怎么做，学校和现实生活从来没有教过我们这些，而我们大多是凭借自己的经验直接跨入的投资产品这个层面（如炒股、做虚拟货币、买房子等等），从而以为我们自己知道了，我们就是要赚很多钱，但几乎很少去思考我们想要怎样的生活，很多钱后我们会做什么，其实这些才是我们投资的原动力，如果这些不是很清晰，我想你投资也不会有好计划，最终也可能不会有好收益。</p><p><strong>首先要培养理财意识，我觉得是最重要的，它是一切的基础，没有意识你永远不会行动。</strong></p><p>要开始启蒙，我觉得只要弄清楚几个问题就差不多了。</p><ol><li>假如达到了你的财务目标你会做什么？</li><li>现在没有什么钱需要理财吗？</li><li>理财就意味着节约，节省吗？</li></ol><p>如果你对于这几个问题还没有清晰的答案，那我建议你去多看几本有关财商的书。<br>我在这里也简单给大家说一下，第一个问题预示着你的财富自由的终极目的，是你所有的原动力，需要自己发一些时间好好去想清楚，你终究想过怎么样的生活，你想做什么事，搞不好这些你现在就可以做到，第二个问题认清理财的作用，理财重要的一部分是帮你积累原始资本，第三个问题揭示理财的初期，是有计划的消费和固定的储蓄。</p><p>以上这些就是我关于自律、健康、理财的一点思考，希望对你有一点帮助:）</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;在 youtube 上关注了一些频道，发现一些简单有趣的类似手绘视频，像这样的 &lt;a href=&quot;https://www.youtube.com/watch?v=RupRLCer9zY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;5分钟看懂IPO&lt;/a&gt;
+        &lt;p&gt;我先说几个关键字：自律，健康，理财 。&lt;/p&gt;&lt;h4 id=&quot;自律&quot;&gt;&lt;a href=&quot;#自律&quot; class=&quot;headerlink&quot; title=&quot;自律&quot;&gt;&lt;/a&gt;自律&lt;/h4&gt;&lt;p&gt;很多人听到自律这个词，都会有点排斥，内心就会觉得自己可能做不到，这样你从一开始就否定了，
       
     
     </summary>
     
-      <category term="days" scheme="https://xbears.github.io/categories/days/"/>
+    
+      <category term="思考" scheme="https://xbears.github.io/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="健康" scheme="https://xbears.github.io/tags/%E5%81%A5%E5%BA%B7/"/>
+    
+      <category term="自律" scheme="https://xbears.github.io/tags/%E8%87%AA%E5%BE%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>不错的内容视频制作软件</title>
+    <link href="https://xbears.github.io/posts/2018-11-29/%E4%B8%8D%E9%94%99%E7%9A%84%E5%86%85%E5%AE%B9%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C%E8%BD%AF%E4%BB%B6/"/>
+    <id>https://xbears.github.io/posts/2018-11-29/不错的内容视频制作软件/</id>
+    <published>2018-11-29T15:39:00.000Z</published>
+    <updated>2019-06-17T16:23:39.420Z</updated>
+    
+    <content type="html"><![CDATA[<p>在 油管 上关注了一些频道，发现一些简单有趣的类似手绘视频，像这样的 <a href="https://www.youtube.com/watch?v=RupRLCer9zY" target="_blank" rel="noopener">5分钟看懂IPO</a>，这样的视频比较简单易懂而且还能使观看者时刻聚焦在内容上，似乎这种视频不是真正的手绘，好像有固定模式，猜想应该是软件生成的，于是去搜索了下，发现是使用这个叫做 <a href="https://www.videoscribe.co" target="_blank" rel="noopener">VideoScribe</a> 软件制作的，了解了下是一个非常不错的软件，支持多平台，还有很多素材，不过售价也不便宜 $114/年，想想其实这个应该可以通过H5来实现（使用 spritejs 绘制 canvas ），需要一些素材，是不是可以做一做呢？ 先记录一下吧 💡。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在 油管 上关注了一些频道，发现一些简单有趣的类似手绘视频，像这样的 &lt;a href=&quot;https://www.youtube.com/watch?v=RupRLCer9zY&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;5分钟看懂IPO&lt;/a&gt;，这样的视
+      
+    
+    </summary>
     
     
       <category term="idea" scheme="https://xbears.github.io/tags/idea/"/>
@@ -42,11 +67,11 @@
   </entry>
   
   <entry>
-    <title>不大喜欢微博八卦后面的网友</title>
-    <link href="https://xbears.github.io/posts/2018-11-28/%E4%B8%8D%E5%A4%A7%E5%96%9C%E6%AC%A2%E5%BE%AE%E5%8D%9A%E5%85%AB%E5%8D%A6%E5%90%8E%E9%9D%A2%E7%9A%84%E7%BD%91%E5%8F%8B/"/>
-    <id>https://xbears.github.io/posts/2018-11-28/不大喜欢微博八卦后面的网友/</id>
-    <published>2018-11-27T16:00:00.000Z</published>
-    <updated>2018-11-28T14:54:26.522Z</updated>
+    <title>少八卦，不无脑谩骂</title>
+    <link href="https://xbears.github.io/posts/2018-11-28/%E5%B0%91%E5%85%AB%E5%8D%A6%E4%B8%8D%E6%97%A0%E8%84%91%E8%B0%A9%E9%AA%82/"/>
+    <id>https://xbears.github.io/posts/2018-11-28/少八卦不无脑谩骂/</id>
+    <published>2018-11-28T14:10:00.000Z</published>
+    <updated>2019-06-17T16:21:42.470Z</updated>
     
     <content type="html"><![CDATA[<p>偶尔得闲会刷一刷微博，最近的热点一个接一个，什么蒋劲夫、薛之谦、还有今天的陈羽凡，看着一个个评论好像亲身经历一样的网友们，各种猜测、乱八、各种推波助澜，其实我是不大喜欢这个感觉的，可能增加了点大家茶余饭后的谈资，可能让你看清了某个明星的另一面，但是很多人经历了什么其实只有他们自己知道，生活该给他们的教训都会给的，更多的时候还是选择做个观察者吧，不要被引导，不要谩骂吧，轻松看待吧。</p>]]></content>
     
@@ -59,31 +84,6 @@
     
     </summary>
     
-      <category term="days" scheme="https://xbears.github.io/categories/days/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>什么时候开始都不晚</title>
-    <link href="https://xbears.github.io/posts/2018-11-27/%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%BC%80%E5%A7%8B%E9%83%BD%E4%B8%8D%E6%99%9A/"/>
-    <id>https://xbears.github.io/posts/2018-11-27/什么时候开始都不晚/</id>
-    <published>2018-11-26T16:00:00.000Z</published>
-    <updated>2018-11-28T14:27:48.405Z</updated>
-    
-    <content type="html"><![CDATA[<p>与其事情还没有开始做就犹犹豫豫，还不如把纠结浪费的时间用来脚踏实地的干，什么时候开始其实都不晚，行动会指引你方向，给你信心!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;与其事情还没有开始做就犹犹豫豫，还不如把纠结浪费的时间用来脚踏实地的干，什么时候开始其实都不晚，行动会指引你方向，给你信心!&lt;/p&gt;
-      
-    
-    </summary>
-    
-      <category term="days" scheme="https://xbears.github.io/categories/days/"/>
-    
     
   </entry>
   
@@ -91,8 +91,8 @@
     <title>坚持30天计划</title>
     <link href="https://xbears.github.io/posts/2018-11-20/%E5%9D%9A%E6%8C%8130%E5%A4%A9%E8%AE%A1%E5%88%92/"/>
     <id>https://xbears.github.io/posts/2018-11-20/坚持30天计划/</id>
-    <published>2018-11-19T16:00:00.000Z</published>
-    <updated>2018-11-20T15:54:56.064Z</updated>
+    <published>2018-11-20T13:08:00.000Z</published>
+    <updated>2019-06-17T16:21:05.232Z</updated>
     
     <content type="html"><![CDATA[<p>前天刷公号看到一篇文章，有个人好奇想知道自己坚持30天吃🍔会怎么样，于是他真的吃了30天，每天记录自己的状态，结果他的身体越来越糟糕，甚至后面还出现的器官衰竭 (虽然不知道是不是吃汉堡吃的 -_-! )，后面一个硅谷的工程师受到启发，何不去做一些有意义的事了，于是他决定去尝试坚持30天做一些有意义的事情，比如每天骑行上班、每天步行N步、每天拍一张照片等等，后来他坚持下来身体健康方面、摄影水平方面都有不小的改善。<br><a id="more"></a><br>嗯，不错，这样的简单30天坚持计划可以很好帮助我们去养成良好的习惯，而且有动力去完成它，可以做一个不错自我改善计划，从一点点做起，不知不觉中看见时间力量，好，我也来做个坚持计划吧，希望我能坚持下，期待自己的改变。</p><p><strong>坚持30天计划</strong></p><ul><li>每天步行9000步以上</li><li>每天喝3杯以上水</li><li>每天睡前刷牙</li><li>每天拍一张照片</li><li>每天复习1小时前端知识</li><li>每天写一点感受、生活、想法</li></ul>]]></content>
     
@@ -102,17 +102,17 @@
     
     </summary>
     
-      <category term="days" scheme="https://xbears.github.io/categories/days/"/>
     
+      <category term="坚持" scheme="https://xbears.github.io/tags/%E5%9D%9A%E6%8C%81/"/>
     
   </entry>
   
   <entry>
-    <title>一点小问题的思考</title>
-    <link href="https://xbears.github.io/posts/2018-08-08/%E4%B8%80%E7%82%B9%E5%B0%8F%E9%97%AE%E9%A2%98%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>https://xbears.github.io/posts/2018-08-08/一点小问题的思考/</id>
-    <published>2018-08-07T16:00:00.000Z</published>
-    <updated>2018-11-20T16:10:56.872Z</updated>
+    <title>微信读书的交互小问题</title>
+    <link href="https://xbears.github.io/posts/2018-08-08/%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E7%9A%84%E4%BA%A4%E4%BA%92%E5%B0%8F%E9%97%AE%E9%A2%98/"/>
+    <id>https://xbears.github.io/posts/2018-08-08/微信读书的交互小问题/</id>
+    <published>2018-08-08T05:01:00.000Z</published>
+    <updated>2019-06-17T16:22:22.489Z</updated>
     
     <content type="html"><![CDATA[<p>“微信读书”这款APP相信很多人都在使用，前些天我和XD都开始用它来的看一些书，使用了几次后XD和我说“这APP很难用，每次都不知道怎么操作”，我的第一感觉是好像在初期使用的时候我也有相同的感觉。</p><p>我们先来说一说它的一些优点吧，它还是有很多优点的，比较明显的一个就是它的语音朗读功能，这个功能很实用，在很多碎片时间的场景听书比看书有更好的体验，再比如图书分享、免费领书、排版视觉、阅读公众文章等等，整体的读书体验还是不错的。<br><a id="more"></a><br>那为什么有这么多优点的一款阅读APP会让人感觉难用呢，我开始回想这种对产品的感觉是从何而来的，后来我发现是它的一些功能上的反常规习惯的交互操作设计引起的，它唤起操作菜单居然要上拉操作，刚开始使用的人完全摸不着头脑，无论你是点文章哪里，不是进入上一页就是进入下一页，（大部分的阅读软件是点击正文横向中间部位显示菜单的）想看下目录或者定位下章节完全不知道怎么操作，我也是摸索了一会后才无意间触发了上拉操作才明白原来是这样设计的，以至于我后来很长一段时间使用它都要刻意回想这种操作习惯。</p><p>就是这样一个操作会让刚接触的用户对产品产生难用的感觉，一方面这反应是交互设计的合理的重要性，用一些隐匿的操作方式代替人们已经熟悉的方式是不太好的一种处理，另一方面反应出重视用户反馈的重要性（我相信也有很多用户有相同的反馈，然而这种设计一直沿用到上一个版本，相当长的时间）。</p><p>这种现象其实在很多APP都有发生，产品的大方向上的功能和满足用户的需求方面都做得不错，反倒是在小的细节和操作习惯上标新立异反常规设计，虽然一下子操作很酷炫的被设计出来了，但是往往怪异操作用户通常不知道怎么触发，再加上新手流程教学的缺失，着实让用户很懵逼。通常解决这类问题还是要从小白用户的角度出发去多体验自己的产品，重视交互体验与用户反馈，在一些频繁发生的操作上最好使用现有已经非常成熟的交互方式，减少用户学习的成本。</p><p>ps:高兴的是今天我更新了新版发现这个功能已经被修改了，改为大部分人已经习惯的点击中部出现菜单操作，向上长拉则改为退出当前书本。</p>]]></content>
     
@@ -122,8 +122,8 @@
     
     </summary>
     
-      <category term="思考" scheme="https://xbears.github.io/categories/%E6%80%9D%E8%80%83/"/>
     
+      <category term="思考" scheme="https://xbears.github.io/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
@@ -131,8 +131,8 @@
     <title>Hello World</title>
     <link href="https://xbears.github.io/posts/2018-07-18/hello-world/"/>
     <id>https://xbears.github.io/posts/2018-07-18/hello-world/</id>
-    <published>2018-07-17T16:00:00.000Z</published>
-    <updated>2018-11-20T16:18:25.036Z</updated>
+    <published>2018-07-18T11:29:00.000Z</published>
+    <updated>2019-06-17T16:20:41.370Z</updated>
     
     <content type="html"><![CDATA[<p>😀 嗯，hexo搭好了，自从几年前vps到期后就没写过了，希望以后会多写写，记录下点滴生活、思考。</p>]]></content>
     
@@ -144,8 +144,6 @@
       
     
     </summary>
-    
-      <category term="days" scheme="https://xbears.github.io/categories/days/"/>
     
     
   </entry>
