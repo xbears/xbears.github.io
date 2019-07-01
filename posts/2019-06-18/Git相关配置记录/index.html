@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="zh-tw" xmlns:v-bind="http://www.w3.org/1999/xhtml"><head><title>Git相关配置记录 - 若寒日誌</title><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="xbears"><meta name="description" content="创建一个版本库用户端生成密钥windows puttygenlinux或windows bash配置用户公钥到服务..."><meta name="keywords" content=""><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"><link rel="stylesheet" href="/css/journal.css?_=20190618"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Lora|Montserrat|Fira+Mono|Material+Icons"><script>!function(e){var t,a={kitId:"dwg1tuc",scriptTimeout:3e3,async:!0},c=e.documentElement,i=setTimeout(function(){c.className=c.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},a.scriptTimeout),n=e.createElement("script"),s=!1,o=e.getElementsByTagName("script")[0];c.className+=" wf-loading",n.src="https://use.typekit.net/"+a.kitId+".js",n.async=!0,n.onload=n.onreadystatechange=function(){if(t=this.readyState,!(s||t&&"complete"!=t&&"loaded"!=t)){s=!0,clearTimeout(i);try{Typekit.load(a)}catch(e){}}},o.parentNode.insertBefore(n,o)}(document)</script><noscript><link rel="stylesheet" href="https://fonts.loli.net/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"></noscript><link rel="stylesheet" href="/css/prism.css" type="text/css"></head><body><div id="top"></div></body></html><div id="app"><div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }"><div class="drawer-content"><div class="drawer-menu"><a class="a-block drawer-menu-item false" href="https://xbears.github.io">首頁 </a><a class="a-block drawer-menu-item false" href="/archives">歸檔 </a><a class="a-block drawer-menu-item false" href="/about/index.html">關於 </a><a class="a-block drawer-menu-item false" href="/tags/index.html">標籤 </a><a class="a-block drawer-menu-item" href="/atom.xml">RSS</a></div></div></div><transition name="fade"><div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div></transition><nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container"><div ref="navBackground" class="nav-background"></div><div class="container container-narrow nav-content"><button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer"><i class="material-icons">menu</i></button> <a ref="navTitle" class="navbar-brand" href="/">若寒日誌</a></div></nav><div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }"><a href="/"><div class="single-column-header-title">若寒日誌</div><div class="single-column-header-subtitle">記錄日常，分享思考</div></a></div><div ref="sideContainer" class="side-container"><a class="a-block nav-head false" href="/"><div class="nav-title">若寒日誌</div><div class="nav-subtitle">記錄日常<br>分享思考</div></a><div class="nav-link-list"><a class="a-block no-tint nav-link-item false" href="/archives">歸檔 </a><a class="a-block nav-link-item false" href="/about/index.html">關於 </a><a class="a-block nav-link-item false" href="/tags/index.html">標籤 </a><a class="a-block no-tint nav-link-item" target="_blank" href="/atom.xml">RSS</a></div><div class="nav-footer">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank">Journal.</a><br>&copy; 2019 <a href="https://xbears.github.io">若寒日誌</a></div></div><div ref="extraContainer" class="extra-container"><div class="pagination"><a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }"><i class="material-icons pagination-action-icon">keyboard_arrow_up</i></a></div></div><div ref="streamContainer" class="stream-container"><div class="post-list-container post-list-container-shadow"><div class="post"><div class="post-head-wrapper-text-only" style="background-image:url()"><div class="post-title">Git相关配置记录<div class="post-meta"><time datetime="2019-06-18T03:50:00.000Z" itemprop="datePublished">2019-06-18 11:50 </time>&nbsp; <i class="material-icons">label</i> <a href="/tags/git/">git</a></div></div></div><div class="post-body-wrapper"><div class="post-body"><ul><li><a href="#创建一个版本库">创建一个版本库</a></li><li><a href="#用户端生成密钥">用户端生成密钥</a><ul><li><a href="#windows-puttygen">windows puttygen</a></li><li><a href="#linux或windows-bash">linux或windows bash</a></li></ul></li><li><a href="#配置用户公钥到服务器">配置用户公钥到服务器</a></li><li><a href="#服务端git钩子hook">服务端git钩子hook</a><ul><li><a href="#自动发布代码到指定目录在服务器上操作">自动发布代码到指定目录（在服务器上操作）</a></li><li><a href="#post-receive内容">post-receive内容</a></li></ul></li><li><a href="#用户端clone代码">用户端clone代码</a></li><li><a href="#版本库迁移">版本库迁移</a><ul><li><a href="#从原地址克隆一份裸版本库">从原地址克隆一份裸版本库</a></li><li><a href="#到新的-git-服务器上创建一个新项目">到新的 Git 服务器上创建一个新项目</a></li><li><a href="#以镜像推送的方式上传代码新的服务器上">以镜像推送的方式上传代码新的服务器上</a></li><li><a href="#切换remote_url">切换remote_url</a></li></ul></li><li><a href="#git修改分支名称">git修改分支名称</a></li><li><a href="#已提交文件忽略">已提交文件忽略</a></li></ul><p>持续更新…</p><h3><span id="创建一个版本库">创建一个版本库</span></h3><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建git用户 </span>
+adduser <span class="token function">git</span>
+
+<span class="token comment" spellcheck="true"># 创建版本库</span>
+<span class="token function">git</span> init --bare /srv/test
+
+<span class="token comment" spellcheck="true"># 更改所有者</span>
+<span class="token function">chown</span> -R git:git /srv/test
+</code></pre><h3><span id="用户端生成密钥">用户端生成密钥</span></h3><h5><span id="windows-puttygen">windows puttygen</span></h5><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 生成公匙</span>
+C:\Program Files\TortoiseGit\bin\puttygen.exe
+Generate
+Copy public key value to /home/git/.ssh/authorized_keys
+Save private key
+<span class="token comment" spellcheck="true"># 配置ssh连接</span>
+C:\Program Files\TortoiseGit\bin\pageant.exe
+<span class="token comment" spellcheck="true"># 选择Add key,选中之前之前保存的私匙</span>
+</code></pre><h5><span id="linux或windows-bash">linux或windows bash</span></h5><pre class="language-bash"><code class="language-bash"><span class="token function">cd</span> ~/.ssh
+ssh-keygen -t rsa -b 4096 -C <span class="token string">"xxx@gmail.com"</span>
+<span class="token function">eval</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span>ssh-agent -s<span class="token variable">)</span></span>"</span>
+ssh-add ~/.ssh/id_rsa
+</code></pre><h3><span id="配置用户公钥到服务器">配置用户公钥到服务器</span></h3><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 如果.ssh目录不存在则创建</span>
+<span class="token function">mkdir</span> /home/git/.ssh
+
+<span class="token function">touch</span> /home/git/.ssh/authorized_keys
+
+<span class="token comment" spellcheck="true"># 更改所有者</span>
+<span class="token function">chown</span> git:git /home/git/.ssh/authorized_keys
+<span class="token function">chmod</span> 600 /home/git/.ssh/authorized_keys
+<span class="token comment" spellcheck="true">#chmod 700 /home/git/.ssh</span>
+
+<span class="token comment" spellcheck="true"># 将客户端生成的public key加入到authorized_keys中</span>
+<span class="token function">vi</span> /home/git/.ssh/authorized_keys
+
+<span class="token comment" spellcheck="true"># 重启ssh </span>
+sevice <span class="token function">ssh</span> restart
+</code></pre><h3><span id="服务端git钩子hook">服务端git钩子hook</span></h3><h5><span id="自动发布代码到指定目录在服务器上操作">自动发布代码到指定目录（在服务器上操作）</span></h5><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># clone代码到web目录</span>
+<span class="token function">git</span> clone /srv/test/ /web/test.com
+
+<span class="token comment" spellcheck="true"># 更改所有者</span>
+<span class="token function">chown</span> -R git:git /web/test.com/
+
+<span class="token comment" spellcheck="true"># 修改hooks</span>
+<span class="token function">vi</span> /srv/test/hooks/post-receive
+
+<span class="token comment" spellcheck="true"># 修改hooks权限</span>
+<span class="token function">chown</span> git:git /srv/test/hooks/post-receive
+<span class="token function">chmod</span> +x /srv/test/hooks/post-receive
+</code></pre><h5><span id="post-receive内容">post-receive内容</span></h5><pre class="language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/sh</span>
+
+<span class="token comment" spellcheck="true">#判断是不是远端仓库</span>
+IS_BARE<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>/usr/bin/git rev-parse --is-bare-repository<span class="token variable">)</span></span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span> -z <span class="token string">"<span class="token variable">$IS_BARE</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+<span class="token keyword">echo</span> <span class="token operator">></span><span class="token operator">&amp;</span>2 <span class="token string">"fatal: post-receive: IS_NOT_BARE"</span>
+<span class="token keyword">exit</span> 1
+<span class="token keyword">fi</span>
+
+unset GIT_DIR
+DeployPath<span class="token operator">=</span><span class="token string">"/web/test.com"</span>
+
+<span class="token keyword">echo</span> <span class="token string">"==============================================="</span>
+<span class="token function">cd</span> <span class="token variable">$DeployPath</span>
+<span class="token keyword">echo</span> <span class="token string">"deploying the web"</span>
+
+<span class="token comment" spellcheck="true">#git stash</span>
+<span class="token comment" spellcheck="true">#git pull origin master</span>
+/usr/bin/git fetch --all
+/usr/bin/git reset --hard origin/develop
+
+time<span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">date</span><span class="token variable">`</span></span>
+<span class="token keyword">echo</span> <span class="token string">"web server pull at webserver at time: <span class="token variable">$time</span>."</span>
+<span class="token keyword">echo</span> <span class="token string">"================================================"</span>
+</code></pre><h3><span id="用户端clone代码">用户端clone代码</span></h3><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone git@192.168.2.234:/srv/test c:\test
+<span class="token comment" spellcheck="true"># 或者ssh协议</span>
+<span class="token function">git</span> clone root@192.168.2.234:/srv/test c:\test
+</code></pre><h3><span id="版本库迁移">版本库迁移</span></h3><h5><span id="从原地址克隆一份裸版本库">从原地址克隆一份裸版本库</span></h5><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 在用户端操作</span>
+<span class="token function">git</span> clone --bare git@192.168.2.5:/srv/test
+
+</code></pre><h5><span id="到新的-git-服务器上创建一个新项目">到新的 Git 服务器上创建一个新项目</span></h5><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 在新服务器上操作</span>
+<span class="token function">su</span> <span class="token function">git</span>
+<span class="token function">cd</span> /srv
+<span class="token function">mkdir</span> new_test.git
+<span class="token function">git</span> init --bare new_test.git
+
+</code></pre><h5><span id="以镜像推送的方式上传代码新的服务器上">以镜像推送的方式上传代码新的服务器上</span></h5><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 在旧服务器上操作</span>
+<span class="token function">cd</span> test.git
+<span class="token function">git</span> push --mirror git@192.168.2.234:/srv/new_test.git
+
+请确保已经添加了公钥到新的服务器上
+
+</code></pre><h5><span id="切换remote_url">切换remote_url</span></h5><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 在用户端操作</span>
+<span class="token function">git</span> branch -r
+<span class="token function">git</span> remote set-url origin remote_git_address
+
+第二种切换remote_url的方法，直接更改.git/conf配置文件里的地址
+</code></pre><h3><span id="git修改分支名称">git修改分支名称</span></h3><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 本地分支重命名</span>
+<span class="token function">git</span> branch -m oldbranchname newbranchname
+
+<span class="token comment" spellcheck="true"># 删除远程分支</span>
+<span class="token function">git</span> push origin  :oldbranchname
+
+<span class="token comment" spellcheck="true"># 上传新命名的本地分支</span>
+<span class="token function">git</span> push origin  newbranchname: newbranchname
+
+</code></pre><h3><span id="已提交文件忽略">已提交文件忽略</span></h3><pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 大家都要忽略</span>
+<span class="token function">git</span> <span class="token function">rm</span> –cached xxx
+<span class="token keyword">echo</span> <span class="token string">"xxx/package-lock.json"</span> <span class="token operator">>></span> .gitignore
+<span class="token comment" spellcheck="true"># commit, push .gitignore</span>
+
+<span class="token comment" spellcheck="true"># 只有自己本地忽略</span>
+<span class="token function">git</span> update-index --assume-unchanged xxx/package-lock.json
+<span class="token comment" spellcheck="true"># 撤销本地忽略 git update-index --no-assume-unchanged </span>
+</code></pre></div></div><nav class="post-pagination"><a class="newer-posts" href="/posts/2019-07-01/摘掉情绪的镜片/">上一篇<br>摘掉情绪的镜片 </a><span class="page-number"></span> <a class="older-posts" href="/posts/2019-05-23/分享最近的一些思考/">下一篇<br>分享最近的一些思考</a></nav></div></div><div class="single-column-footer">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank">Journal.</a><br>&copy; 2019 <a href="https://xbears.github.io">若寒日誌</a></div></div></div><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/vue/2.5.17/vue.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.polyfills.min.js"></script><script src="/js/journal.js"></script><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?d3733eed366511d7a57b536658abd854";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script>
